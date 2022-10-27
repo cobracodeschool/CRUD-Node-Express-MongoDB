@@ -6,7 +6,7 @@ var Userdb = require('../model/model');
 exports.create = (req,res)=>{
     // validate request
     if(!req.body){
-        res.status(400).send({ message : "Content can not be emtpy!"});
+        res.status(400).send({ message : "Content can not be empty!"});
         return;
     }
     /* If the user make a post request from the empty body i just return they above callback function. 
