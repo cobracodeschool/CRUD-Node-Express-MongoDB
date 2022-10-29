@@ -20,14 +20,21 @@ exports.create = (req,res)=>{
         email : req.body.email,
         gender: req.body.gender,
         status : req.body.status
-        // The data is going to match the model
+        // The data is going to match the model schema
     })
     /* Inside the controller we store the above data and create a new instance of userdb model and store is in the var user*/
 
+    
+    /* Method Chaining is the practice of calling different methods in a single line instead of calling 
+    other methods with the same object reference separately. Under this procedure, we have to 
+    write the object reference once and then call the methods by separating them with a (dot.). */
+
     // save user in the database
+
+    /* ***** doubt  in console page*/
     user
-        .save(user)
-        .then(data => {
+        .save(user)               /* This method save the data in the mongodb database & I am passing the object here*/
+        .then(data => {           /* This is promise then method */
             // res.send(data)
             res.redirect('/add-user');
         })
@@ -38,7 +45,6 @@ exports.create = (req,res)=>{
         });
 
 }
-
 /* Inside the find method we are going to get the query parameter and get the single user from the database*/
 
 // retrieve and return all users/ retrieve and return a single user
