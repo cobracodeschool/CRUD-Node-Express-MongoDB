@@ -16,19 +16,25 @@
             <span class="text-light">Use the below form to Update an account</span>
         </div>
 
-        <!-- add user form -->
+        <!-- UPDATE USER form -->
          <!-- form handling -->
  <form method="POST" id="update_user">
     <div class="new_user">
+
+        <!-- For Name -->
         <div class="form-group">
             <label for="name" class="text-light">Name</label>
             <input type="hidden" name="id" value="<%= user._id %>">
             <input type="text" name="name" value="<%= user.name %>" placeholder="Santhanam">
         </div>
+
+        <!-- For Email -->
         <div class="form-group">
             <label for="Email" class="text-light">Email</label>
             <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
         </div>
+
+        <!-- Radio Buttons For Male & Female -->
         <div class="form-group">
             <label for="gender" class="text-light">Gender</label>
             <div class="radio inline">
@@ -40,7 +46,8 @@
                 <label for="radio-3" class="radio-label">Female</label>
             </div>
         </div>
-
+        
+        <!-- Active & Inactive Button -->
         <div class="form-group">
             <label for="gender" class="text-light">Status</label>
             <div class="radio inline">
@@ -53,6 +60,7 @@
             </div>
         </div>
 
+        <!-- Submit Button -->
         <div class="form-group">
             <button type="submit" class="btn text-dark update">Save</button>
         </div>

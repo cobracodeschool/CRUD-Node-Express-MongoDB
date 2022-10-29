@@ -30,6 +30,8 @@ app.set("view engine", "ejs")
 app.use('/css', express.static(path.resolve(__dirname, "assets/css")))
 app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
 app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
+/* By this i din't have to specify the relative path of this file in future because here i have the virtual path. 
+By this you don't have to specify path in source attribute. */
 
 // load routers
 app.use('/', require('./server/routes/router'))

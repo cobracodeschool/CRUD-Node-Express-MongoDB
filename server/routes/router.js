@@ -18,7 +18,10 @@ route.get('/', services.homeRoutes);
  *  @description add users
  *  @method GET /add-user
  */
-route.get('/add-user', services.add_user)
+route.get('/add-user', services.add_user)  
+
+/* *** ADDING USER DATA -  Using the bellow POST method using the add-user i'm going to just redirect the user
+ to the services add_user and when the route is match to add user i'm gonna render this add_user.ejs file */
 
 /**
  *  @description for update user

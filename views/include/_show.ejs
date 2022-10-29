@@ -6,9 +6,12 @@
         <td><%= users[i].gender %></td>
         <td><%= users[i].status %></td>
         <td>
+            <!-- Instead of just update-user i am passing id with this url -->
             <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
                 <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
             </a>
+            <!-- I am going to pass a data attribute and get user id when i click anchor tag 
+            and make a delete request to delete a specific user ***GOTO INDEX.JS***-->
             <a class="btn border-shadow delete" data-id=<%= users[i]._id%> >
                 <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
             </a>
