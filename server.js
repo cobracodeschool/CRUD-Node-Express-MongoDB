@@ -1,10 +1,10 @@
 // This file allows you to start the server
 
-const express =require('express');
-const dotenv =require('dotenv');
-const morgan =require('morgan');
-const bodyparser =require('body-parser');
-const path =require('path');
+const express = require('express');
+const dotenv = require('dotenv');
+const morgan = require('morgan');
+const bodyparser = require('body-parser');
+const path = require('path');
 
 const connectDB = require('./server/database/connection');
 
