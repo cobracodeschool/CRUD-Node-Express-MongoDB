@@ -1,6 +1,6 @@
 /* Using controller we can create, remove, update and delete records */
 
-var Userdb = require('../model/model');
+var Userdb = require('../model/model'); //imported the schema
  
 // create and save new user
 exports.create = (req,res)=>{
@@ -9,7 +9,7 @@ exports.create = (req,res)=>{
         res.status(400).send({ message : "Content can not be empty!"});
         return;
     }
-    /* If the user make a post request from the empty body i just return they above callback function. 
+    /* If the user make a post request from the empty body I just return they above callback function. 
     when ever user make a post request you need to specify the body of the post request.
     when you make a post request using a form all the data in the form is stored in the body of the request object 
     and using the body we can access all the form data. */
