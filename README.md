@@ -24,4 +24,4 @@ MongoDB:
 ![Screenshot from 2022-10-29 13-52-25](https://user-images.githubusercontent.com/110757279/198821776-a5b40613-6f25-4596-9ace-a803f7799095.png)
 
 
-Project vedio Link (https://www.loom.com/share/67c570e5b7b94feaa3a3739c044ef84a)
+Project video Link (https://www.loom.com/share/67c570e5b7b94feaa3a3739c044ef84a)
