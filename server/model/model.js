@@ -19,4 +19,4 @@ const Userdb = mongoose.model('userdb', schema);
 /*  called a method of mongoose model inside the model specified 
 the document name and shape of the document*/
 
-module.exports = Userdb
+module.exports = Userdb;
